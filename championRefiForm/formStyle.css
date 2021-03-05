@@ -1,7 +1,26 @@
-.form-progress {
-  display: none;
+/* .form-progress {
+  display: flex;
+  height: 30px;
+  width: 100px;
+  background-color: green;
+}
+.form-progress-bar {
+  color: red;
+  background-color: rebeccapurple;
+} */
+.progress-bar {
+  margin: 0 auto;
+  width: 90%;
+  background-color: rgb(209, 209, 209);
+  height: 30px;
+  color: red;
 }
 
+.the-bar {
+  width: 5px;
+  height: 30px;
+  background-color: rgb(0, 95, 79);
+}
 form {
   box-sizing: border-box;
   background-color: #e8f9f6;
