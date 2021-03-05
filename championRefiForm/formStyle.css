@@ -22,6 +22,13 @@
   height: 30px;
   background-color: rgb(0, 95, 79);
 }
+.progressIndicator {
+  background-color: red;
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  transform: translateY(-30px);
+}
 form {
   box-sizing: border-box;
   background-color: #e8f9f6;

@@ -185,4 +185,6 @@ function moveProgress() {
         theBar.style.width = `${ moved += distanceToMove}%`
     } 
 
-
+const progressIndicator = document.querySelectorAll('.progressIndicator')
+// console.log([...progressIndicator]);
+progressIndicator.forEach(indicator => indicator.style.transform = 'translateX(30px)')
