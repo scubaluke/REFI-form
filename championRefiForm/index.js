@@ -47,8 +47,6 @@ setBtn.forEach(btn => btn.addEventListener('click', setValue))
  function setValue(e) {
      e.preventDefault()
      e.stopPropagation()
-  // move progress bar
-  moveProgress()
 
 // selectors 
      const formElement = e.target.parentElement.parentElement
@@ -56,10 +54,10 @@ setBtn.forEach(btn => btn.addEventListener('click', setValue))
      if (formElement.dataset.field === 'propertyValue' || formElement.dataset.field === 'additionalCash' ) {
            formElement.style.display = 'none';
             nextFormElement.style.display = 'block'
+            moveProgress()
      }
      if (formElement.dataset.field === 'state') {
         const state = document.querySelector('#PROP_ST')
-
          if (!state.value) {
             // state.insertAdjacentHTML('afterend', '<p>* Required</p>')
             state.classList.add('select-styled-required')
@@ -68,6 +66,7 @@ setBtn.forEach(btn => btn.addEventListener('click', setValue))
          } else {
             formElement.style.display = 'none';
             nextFormElement.style.display = 'block'
+            moveProgress()
         }
      }
     if (formElement.dataset.field === 'address') {
@@ -86,6 +85,7 @@ setBtn.forEach(btn => btn.addEventListener('click', setValue))
         } else {
             formElement.style.display = 'none';
             nextFormElement.style.display = 'block'
+            moveProgress()
         }
     } 
     //  formElement.style.display = 'none';
